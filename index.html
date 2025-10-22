@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meditating Is Fun</title>
+</head>
+<body>
+	<script>
+    const dayNames = [
+        "Domingo", "Lunes", "Martes", "Miércoles", 
+        "Jueves", "Viernes", "Sábado"
+    ];
+
+    const today = new Date();
+    const currentDay = today.getDay();
+    const dayName = dayNames[currentDay];
+    
+    console.log(currentDay)
+
+    window.location.href = `html/${dayName}.html`;
+	</script>
+</body>
+</html>
