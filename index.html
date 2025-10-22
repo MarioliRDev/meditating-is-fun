@@ -8,15 +8,14 @@
 <body>
 	<script>
     const dayNames = [
-        "Domingo", "Lunes", "Martes", "Miércoles", 
-        "Jueves", "Viernes", "Sábado"
+        "Domingo", "Lunes", "Martes", "Miercoles", 
+        "Jueves", "Viernes", "Sabado"
     ];
 
     const today = new Date();
     const currentDay = today.getDay();
     const dayName = dayNames[currentDay];
     
-    console.log(currentDay)
 
     window.location.href = `html/${dayName}.html`;
 	</script>
