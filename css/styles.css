@@ -18,7 +18,6 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	padding: .5rem 1rem;
-	gap: 1rem;
 	background-color: #0f0f0f 
 }
 
@@ -38,13 +37,14 @@ section {
 section img {
 	width: 200px;
 	border-radius: 50%;
+	aspect-ratio: 1 / 1;
 	border: 2px solid #0f0f0f;
 	align-self: center;
 	box-shadow: 0 0 16px #0003;
 }
 
 .img-dark {
-	filter: brightness(30%);
+	filter: brightness(50%);
 }
 
 section h2 {
@@ -103,7 +103,6 @@ section div {
 .icons {
 	display: flex;
 	gap: 1rem;
-	margin-right: 5rem;
 }
 
 svg {
