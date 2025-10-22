@@ -1,21 +1,10 @@
-@media (prefers-color-scheme: light) {
-	body {
-		color: #0f0f0f;
-	}
-
-	header {
-		background: #f0f0f0;
-	}
-}
-
 * {
 	font-family: system-ui, sans-serif;
 }
 
 body {
-
 	width: 100vw;
-
+	background-color: #0f0f0f;
 }
 
 header, section {
@@ -27,15 +16,10 @@ header, section {
 header {
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
 	padding: .5rem 1rem;
 	gap: 1rem;
-	background: 
-	linear-gradient(#fff 95%, #0003);
-
-}
-
-header h1 {
-	font-size: 2.5rem;
+	background-color: #0f0f0f 
 }
 
 header img {
@@ -57,6 +41,10 @@ section img {
 	border: 2px solid #0f0f0f;
 	align-self: center;
 	box-shadow: 0 0 16px #0003;
+}
+
+.img-dark {
+	filter: brightness(30%);
 }
 
 section h2 {
@@ -111,6 +99,26 @@ section div {
 .sabado {
 	background: rgb(204 0 0);
 }
+
+.icons {
+	display: flex;
+	gap: 1rem;
+	margin-right: 5rem;
+}
+
+svg {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	fill: #f0f0f0;
+}
+
+.hide {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+}
+
 
 
 @media screen and (min-width: 481px) {
