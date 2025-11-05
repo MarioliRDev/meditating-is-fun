@@ -1,11 +1,15 @@
+:root {
+	--negro: #1f1f1f;
+}
+
 * {
 	font-family: system-ui, sans-serif;
 }
 
 body {
 	width: 100vw;
-	background-color: #171717;
-	color: #171717;
+	background-color: var(--negro);
+	color: var(--negro);
 }
 
 header, section {
@@ -19,13 +23,14 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	padding: .5rem 1rem;
-	background-color: #171717; 
+	background-color: var(--negro); 
 }
 
 header img {
 	width: 75px;
 	border-radius: 50%;
-	box-shadow: 0 0 16px #171717;
+	border: 1px solid var(--negro);
+	box-shadow: 0 0 6px var(--negro);
 }
 
 section {
@@ -39,9 +44,9 @@ section img {
 	width: 200px;
 	border-radius: 50%;
 	aspect-ratio: 1 / 1;
-	border: 2px solid #171717;
+	border: 1px solid var(--negro);
 	align-self: center;
-	box-shadow: 0 0 16px #171717;
+	box-shadow: 0 0 6px var(--negro);
 }
 
 .img-dark {
