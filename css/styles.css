@@ -8,6 +8,7 @@
 	font-family: "Vend Sans", system-ui, sans-serif;
 	margin: 0;
 	padding: 0;
+	line-height: 1.65;
 }
 
 html {
@@ -71,6 +72,13 @@ section div {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
+}
+
+b {
+	border-bottom: 1px solid var(--blanco);
+	border-left: 1px solid var(--blanco);
+	padding-left: 3px;
+	box-shadow: -1px 1px  var(--blanco);
 }
 
 h2, li, b, p {
