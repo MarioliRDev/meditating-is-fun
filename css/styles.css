@@ -1,7 +1,7 @@
 :root {
 	--negro: #1f1f1f;
 	--blanco: #efefef;
-	font-size: 16px;
+	font-size: 12px;
 }
 
 * {
@@ -73,6 +73,10 @@ section div {
 	gap: 1rem;
 }
 
+h2, li, b, p {
+	text-shadow: 0 0 2px var(--negro);
+}
+
 .domingo {
 	background: rgb(0 204 0);
 	height: 100%;
@@ -109,8 +113,8 @@ section div {
 }
 
 svg {
-	width: 40px;
-	height: 40px;
+	width: 30px;
+	height: 30px;
 	cursor: pointer;
 }
 
@@ -129,7 +133,7 @@ svg {
 }
 
 .img-dark {
-	filter: brightness(70%);
+	filter: brightness(75%);
 }
 
 body.dark {
@@ -146,10 +150,17 @@ header.dark > img {
 	box-shadow: 0 0 6px var(--blanco);
 }
 
+body.dark h2,
+body.dark li,
+body.dark b,
+body.dark p {
+	text-shadow: 0 0 2px var(--blanco);
+}
+
 @media screen and (min-width: 481px) {
 	
 	:root {
-		font-size: 17px;
+		font-size: 13px;
 	}
 
 	section {
@@ -176,7 +187,7 @@ header.dark > img {
 @media screen and (min-width: 769px) {
 	
 	:root {
-		font-size: 18px;
+		font-size: 14px;
 	}
 
 	section, header {
