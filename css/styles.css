@@ -150,6 +150,13 @@ header.dark > img {
 	box-shadow: 0 0 6px var(--blanco);
 }
 
+body.dark h2,
+body.dark li,
+body.dark b,
+body.dark p {
+	text-shadow: unset;
+}
+
 @media screen and (min-width: 481px) {
 	
 	:root {
