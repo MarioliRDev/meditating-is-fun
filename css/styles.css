@@ -75,10 +75,7 @@ section div {
 }
 
 b {
-	border-bottom: 1px solid var(--blanco);
-	border-left: 1px solid var(--blanco);
-	padding-left: 3px;
-	box-shadow: -1px 1px  var(--blanco);
+	border-bottom: 3px dashedf var(--blanco);
 }
 
 h2, li, b, p {
@@ -163,6 +160,10 @@ body.dark li,
 body.dark b,
 body.dark p {
 	text-shadow: unset;
+}
+
+body.dark b {
+	border-color: var(--negro);
 }
 
 @media screen and (min-width: 481px) {

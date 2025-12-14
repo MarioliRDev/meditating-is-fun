@@ -71,20 +71,11 @@
 	     	const header = el("header");
 	     	const sectionImg = el("section > img");
 
-				if (localStorage.getItem("mode") === "dark") {
-					turnDark()
-				}
+				if (localStorage.getItem("mode") === "dark") turnDark();
 
-	     	lightBtn.addEventListener("click", (e) => {
-	     		turnLight()
+	     	lightBtn.addEventListener("click", turnLight)
 
-	     	})
-
-	     	darkBtn.addEventListener("click", (e) => {
-
-	     		turnDark()
-
-	     	})
+	     	darkBtn.addEventListener("click", turnDark)
 
 	     	function turnLight () {
 	     		darkBtn.classList.toggle("hide");
