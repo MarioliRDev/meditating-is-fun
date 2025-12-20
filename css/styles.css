@@ -2,6 +2,7 @@
 	--negro: #1f1f1f;
 	--negro-t: #1f1f1f1f;
 	--blanco: #efefef;
+	--blanco-t: #efefef33;
 	font-size: 12px;
 }
 
@@ -64,7 +65,7 @@ section h2 {
 }
 
 section ul, section p {
-	background: var(--negro-t);
+	background: var(--blanco-t);
 	padding: 9px;
 }
 
