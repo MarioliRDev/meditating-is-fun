@@ -1,5 +1,6 @@
 :root {
 	--negro: #1f1f1f;
+	--negro-t: #1f1f1f1f;
 	--blanco: #efefef;
 	font-size: 12px;
 }
@@ -18,7 +19,7 @@ html {
 body {
 	width: 100%;
 	background-color: var(--blanco);
-	color: var(--blanco);
+	color: var(--negro);
 }
 
 header, section {
@@ -39,7 +40,6 @@ header img {
 	width: 75px;
 	border-radius: 50%;
 	border: 1px solid var(--negro);
-	box-shadow: 0 0 6px var(--negro);
 }
 
 section {
@@ -63,6 +63,11 @@ section h2 {
 	margin: 0 auto;
 }
 
+section ul, section p {
+	background: var(--negro-t);
+	padding: 9px;
+}
+
 section ul li, section p {
 	list-style-type: none;
 	font-size: 1.5rem;
@@ -75,24 +80,41 @@ section div {
 }
 
 b {
-	border-bottom: 3px dashedf var(--blanco);
+	border-bottom: 3px dashed var(--negro);
 }
 
 h2, li, b, p {
-	text-shadow: 0 0 2px var(--negro);
+	text-shadow: 0 0 1px var(--negro);
 }
 
 .domingo {
 	background: rgb(0 204 0);
-	height: 100%;
+}
+
+.domingo ul,
+.domingo p {
+	box-shadow: inset 5px 5px 5px rgb(0 204 0),
+							inset -5px -5px 5px rgb(0 204 0);
 }
 
 .lunes {
 	background: rgb(102 0 204);
 }
 
+.lunes ul,
+.lunes p {
+	box-shadow: inset 5px 5px 5px rgb(102 0 204),
+							inset -5px -5px 5px rgb(102 0 204);
+}
+
 .martes {
 	background: rgb(204 204 0);
+}
+
+.martes ul,
+.martes p {
+	box-shadow: inset 5px 5px 5px rgb(204 204 0),
+							inset -5px -5px 5px rgb(204 204 0);
 }
 
 .miercoles {
@@ -100,16 +122,40 @@ h2, li, b, p {
 
 }
 
+.miecoles ul,
+.miecoles p {
+	box-shadow: inset 5px 5px 5px rgb(0 0 204),
+							inset -5px -5px 5px rgb(0 0 204);
+}
+
 .jueves {
 	background: rgb(204 102 0);
+}
+
+.jueves ul,
+.jueves p {
+	box-shadow: inset 5px 5px 5px rgb(204 102 0),
+							inset -5px -5px 5px rgb(204 102 0);
 }
 
 .viernes {
 	background: rgb(0 102 204);
 }
 
+.viernes ul,
+.viernes p {
+	box-shadow: inset 5px 5px 5px rgb(0 102 204),
+							inset -5px -5px 5px rgb(0 102 204);
+}
+
 .sabado {
 	background: rgb(204 0 0);
+}
+
+.sabado ul,
+.sabado p {
+	box-shadow: inset 5px 5px 5px rgb(204 0 0),
+							inset -5px -5px 5px rgb(204 0 0);
 }
 
 .icons {
@@ -142,17 +188,11 @@ svg {
 }
 
 body.dark {
-	color: var(--negro);
 	background: var(--negro);
 }
 
 header.dark {
 	background: var(--negro);
-}
-
-header.dark > img {
-	border: 1px solid var(--blanco);
-	box-shadow: 0 0 6px var(--blanco);
 }
 
 body.dark h2,
